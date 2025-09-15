@@ -1,0 +1,36 @@
+<svg width="720" height="280" viewBox="0 0 720 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ArMan logo white">
+  <defs>
+    <style>
+      .word {
+        font-size: 150px;
+        font-weight: 700;
+        font-family: "Pacifico", "Lobster", "Brush Script MT", "Segoe Script", "Snell Roundhand", cursive;
+        letter-spacing: -3px;
+        fill: white; /* متن سفید */
+      }
+      .shadow {
+        fill: none;
+        stroke: rgba(0,0,0,0.2); /* سایه ملایم */
+        stroke-width: 12;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .swoosh {
+        fill: none;
+        stroke: white; /* خط سفید */
+        stroke-width: 14;
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+
+  <!-- سایه متن -->
+  <text x="40" y="175" class="word shadow">ArMan</text>
+  <!-- متن اصلی سفید -->
+  <text x="40" y="175" class="word">ArMan</text>
+
+  <!-- خط منحنی زیر لوگو -->
+  <path class="swoosh" d="M85 205
+           C 180 250, 330 250, 430 210
+           S 650 140, 670 200"></path>
+</svg>

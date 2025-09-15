@@ -1,0 +1,12 @@
+<!-- Angular-style Icon (simple, free-to-use; not the official trademark) -->
+<svg width="128" height="128" viewBox="0 0 256 256" role="img" aria-label="Angular icon" xmlns="http://www.w3.org/2000/svg">
+  <title>Angular Icon</title>
+  <!-- Shield -->
+  <polygon points="128,8 248,56 224,208 128,248 32,208 8,56" fill="#DD0031"></polygon>
+  <!-- Shadow inset -->
+  <polygon points="128,24 232,64 212,200 128,232 44,200 24,64" fill="#C3002F"></polygon>
+  <!-- Stylized 'A' -->
+  <polygon points="128,60 184,180 156,180 142,150 114,150 100,180 72,180" fill="#FFFFFF"></polygon>
+  <!-- Crossbar -->
+  <rect x="104" y="132" width="48" height="12" fill="#FFFFFF" rx="2"></rect>
+</svg>

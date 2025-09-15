@@ -1,0 +1,23 @@
+<svg width="320" height="320" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DS monogram logo white">
+  <defs>
+    <style>
+      .ring { 
+        fill: none; 
+        stroke: white; 
+        stroke-width: 12; 
+      }
+      .word {
+        font-size: 150px;
+        font-weight: 700;
+        font-family: "Pacifico","Lobster","Brush Script MT","Segoe Script","Snell Roundhand",cursive;
+        letter-spacing: -6px;
+        fill: white;
+      }
+    </style>
+  </defs>
+
+  <!-- حلقه سفید -->
+  <circle cx="160" cy="160" r="130" class="ring"></circle>
+  <!-- متن DS سفید -->
+  <text x="50%" y="56%" class="word" text-anchor="middle" dominant-baseline="middle">DS</text>
+</svg>
