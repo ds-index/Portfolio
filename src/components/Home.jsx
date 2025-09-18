@@ -27,10 +27,10 @@ export default function Home() {
           <img
             className="w-8 h-8"
             src={softwareEngineer}
-            alt="Software Architect"
+            alt="Frontend Developer"
           />
           <div className="text-lg font-bold text-indigo-400">
-            Software Architect
+            Frontend Developer
           </div>
         </div>
 
@@ -38,10 +38,10 @@ export default function Home() {
           <img
             className="w-8 h-8"
             src={softwareArchitecture}
-            alt="Backend Engineer"
+            alt="Backend Developer"
           />
           <div className="text-lg font-bold text-indigo-400">
-            Backend Engineer
+            Backend Developer
           </div>
         </div>
       </div>

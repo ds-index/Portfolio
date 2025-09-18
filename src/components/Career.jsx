@@ -5,7 +5,8 @@ import web from "../assets/web-page-browser-analysis-screen-svgrepo-com.svg";
 import uni from "../assets/university-svgrepo-com.svg";
 import dotnet from "../assets/dotnet-svgrepo-com.svg";
 import python from "../assets/python-svgrepo-com.svg";
-import csharp from "../assets/csharp-svgrepo-com.svg";
+import react from "../assets/react.svg";
+import nodejs from "../assets/node.js.svg";
 
 export default function Career() {
   const [selectedExp, setSelectedExp] = useState(null);
@@ -18,8 +19,8 @@ export default function Career() {
       description: "Computer Engineering - Isfahan University",
     },
     {
-      name: "C#",
-      icon: csharp,
+      name: "Node.js",
+      icon: nodejs,
       date: "2019",
       description: "Issued by TVTO",
     },
@@ -42,6 +43,12 @@ export default function Career() {
       description: "SoloLearn Certification",
     },
     {
+      name: "React",
+      icon: react,
+      date: "2022",
+      description: "Meta Certification",
+    },
+    {
       name: "Angular",
       icon: angular,
       date: "2023",
@@ -61,17 +68,17 @@ export default function Career() {
       company: "Self Employed",
       duration: "Jan 2020 - Oct 2022",
       tech: [
-        "C#.NET",
-        "ASP.NET Core MVC",
-        "EF Core",
-        "Linq",
-        "Identity",
-        "Sql Server",
-        "Git/Github",
-        "JS/HTML/CSS",
-        "Bootstrap",
-        "Algoritm",
-        "Data Structure",
+        "Javascipt",
+        "Typescript",
+        "Node.js",
+        "Express.js",
+        "ORM",
+        "JWT",
+        "OAuth",
+        "Postgresql",
+        "MongoDb",
+        "Design Patterns",
+        "Clean Code",
       ],
       description:
         "Developed backend services and MVC pattern, managed database architecture, and optimized performance for various projects.",
@@ -80,29 +87,56 @@ export default function Career() {
       role: "Frontend Developer",
       company: "Demis",
       duration: "Feb 2023 - Nov 2023",
-      tech: ["Angular", "Typescript", "RXJS", "Tailwind", "RWD", "PWA"],
+      tech: [
+        "JS/HTML/CSS",
+        "Angular",
+        "Typescript",
+        "RXJS",
+        "Tailwind",
+        "RWD",
+        "PWA",
+      ],
       description:
         "Built interactive UI components, implemented responsive design, and collaborated closely with designers to improve UX.",
     },
     {
-      role: "Backend Developer",
+      role: "Frontend Developer",
       company: "Freelance",
       duration: "Mar 2022 - Jul 2025",
       tech: [
+        "JS/HTML/CSS",
+        "Typescript",
+        "React",
+        "Next.js",
+        "Redux",
+        "RWD",
+        "SEO",
+        "Tailwind",
+        "MUI",
+        "Graphql",
+        "Figma",
+        "UI/UX",
+      ],
+      description:
+        "Built high performance, modern UI, RWD, SSR and PWA. Implement Optimized UX and SEO friendly.",
+    },
+    {
+      role: "Backend Developer",
+      company: "Freelance",
+      duration: "Jun 2023 - Nov 2024",
+      tech: [
         "C#.NET",
-        "ASP.NET Core WebAPI",
+        "ASP.NET Core",
+        "ASP.NET Core MVC",
         "EF Core",
         "Linq",
         "Sql Server",
-        "Dapper",
-        "JWT/OAuth",
-        "Design Patterns",
-        "Git/Github",
-        "Algorithm",
-        "Data Structure",
+        "Identity",
+        "JS/HTML/CSS",
+        "JQuery",
+        "Bootstrap",
       ],
-      description:
-        "Created web services API With high performance and security, optimize Db, Design Patterns and Clean Coding.",
+      description: "Implement MVC enterprise webApplication. Secure and Fast.",
     },
   ];
 
