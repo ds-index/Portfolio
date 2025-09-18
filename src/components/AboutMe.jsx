@@ -40,15 +40,16 @@ const AboutMe = () => {
             loaded ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
           }`}>
           <h2 className="text-3xl font-bold mb-4">
-            ⚡ Full-Stack Software Engineer | JS/TS Expert | AI Enthusiast
+            ⚡ Software Architect | .NET Expert | AI Enthusiast
           </h2>
           <p className="mb-4">
-            ##💻 Full-Stack Software Engineer (JS/TS, React, Next.js, Angular,
-            Node.js, Nest.js) 🛠️ Experienced in scalable systems, microservices,
-            and secure APIs ☁️ Skilled with DevOps, Docker, Kubernetes, and
-            CI/CD 🧠 AI & ML Enthusiast — learning Python, ML/DL, and advanced
-            mathematics 🎯 Passionate about building **secure, scalable, and
-            smart software solutions**
+            I am a Software Architect and Backend Engineer specializing in the
+            .NET, with expertise in ASP.NET Core (MVC & Web API), RESTful APIs,
+            SQL/NoSQL databases, and secure application design using JWT,
+            OAuth2, and Identity Server. I leverage Clean Code principles,
+            Design Patterns, and Microservices architecture to build scalable
+            and maintainable systems. Skilled in DevOps with Azure, Docker, and
+            Kubernetes, I also integrate Angular frontends.
           </p>
           <p className="mb-4">
             I’m focused on designing and developing end-to-end solutions that

@@ -5,8 +5,7 @@ import web from "../assets/web-page-browser-analysis-screen-svgrepo-com.svg";
 import uni from "../assets/university-svgrepo-com.svg";
 import dotnet from "../assets/dotnet-svgrepo-com.svg";
 import python from "../assets/python-svgrepo-com.svg";
-import react from "../assets/react.svg";
-import nodejs from "../assets/node.js.svg";
+import csharp from "../assets/csharp-svgrepo-com.svg";
 
 export default function Career() {
   const [selectedExp, setSelectedExp] = useState(null);
@@ -19,8 +18,8 @@ export default function Career() {
       description: "Computer Engineering - Isfahan University",
     },
     {
-      name: "Node.js",
-      icon: nodejs,
+      name: "C#",
+      icon: csharp,
       date: "2019",
       description: "Issued by TVTO",
     },
@@ -43,12 +42,6 @@ export default function Career() {
       description: "SoloLearn Certification",
     },
     {
-      name: "React",
-      icon: react,
-      date: "2022",
-      description: "Meta Certification",
-    },
-    {
       name: "Angular",
       icon: angular,
       date: "2023",
@@ -68,20 +61,19 @@ export default function Career() {
       company: "Self Employed",
       duration: "Jan 2020 - Oct 2022",
       tech: [
-        "Javascipt",
-        "Typescript",
-        "Node.js",
-        "Express.js",
-        "ORM",
-        "JWT",
-        "OAuth",
-        "Postgresql",
-        "MongoDb",
-        "Design Patterns",
-        "Clean Code",
+        "C#.NET",
+        "ASP.NET Core",
+        "ASP.NET Core MVC",
+        "EF Core",
+        "LINQ",
+        "Identity",
+        "Sql Server",
+        "JS/HTML/CSS",
+        "Bootstrap",
+        "JQuery",
       ],
       description:
-        "Developed backend services and MVC pattern, managed database architecture, and optimized performance for various projects.",
+        "Developed backend services and MVC pattern, managed database architecture, and optimized performance.",
     },
     {
       role: "Frontend Developer",
@@ -100,43 +92,26 @@ export default function Career() {
         "Built interactive UI components, implemented responsive design, and collaborated closely with designers to improve UX.",
     },
     {
-      role: "Frontend Developer",
+      role: "Backend Developer",
       company: "Freelance",
       duration: "Mar 2022 - Jul 2025",
       tech: [
-        "JS/HTML/CSS",
-        "Typescript",
-        "React",
-        "Next.js",
-        "Redux",
-        "RWD",
-        "SEO",
-        "Tailwind",
-        "MUI",
-        "Graphql",
-        "Figma",
-        "UI/UX",
-      ],
-      description:
-        "Built high performance, modern UI, RWD, SSR and PWA. Implement Optimized UX and SEO friendly.",
-    },
-    {
-      role: "Backend Developer",
-      company: "Freelance",
-      duration: "Jun 2023 - Nov 2024",
-      tech: [
         "C#.NET",
         "ASP.NET Core",
-        "ASP.NET Core MVC",
+        "ASP.NET Core WebAPI",
         "EF Core",
-        "Linq",
+        "LINQ",
+        "Dapper",
         "Sql Server",
-        "Identity",
-        "JS/HTML/CSS",
-        "JQuery",
-        "Bootstrap",
+        "JWT/OAuth",
+        "Clean Code",
+        "Design Patterns",
+        "Swagger",
+        "Postman",
+        "XUnit",
       ],
-      description: "Implement MVC enterprise webApplication. Secure and Fast.",
+      description:
+        "Built high performance, secure and robust enterprise grade API Services.",
     },
   ];
 
