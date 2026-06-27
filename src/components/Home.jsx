@@ -22,25 +22,25 @@ export default function Home() {
       </div>
 
       {/* Skills */}
-      <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-4">
-        <div className="flex flex-row items-center gap-2 bg-gray-800 rounded-xl shadow-lg p-3 hover:scale-105 transition-transform duration-300 animate__animated animate__slideInDown">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-6">
+        <div className="flex flex-row items-center gap-3 bg-gradient-to-r from-indigo-500/10 to-violet-500/10 border border-indigo-400/30 rounded-xl shadow-lg p-4 hover:scale-105 hover:shadow-2xl hover:border-indigo-400/60 transition-all duration-300 animate__animated animate__slideInDown">
           <img
-            className="w-8 h-8"
+            className="w-8 h-8 drop-shadow-lg"
             src={softwareEngineer}
             alt="Software Architect"
           />
-          <div className="text-lg font-bold text-indigo-400">
-            Software Architect
+          <div className="text-lg font-bold bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent">
+            DevOps Enthusiast
           </div>
         </div>
 
-        <div className="flex flex-row items-center gap-2 bg-gray-800 rounded-xl shadow-lg p-3 hover:scale-105 transition-transform duration-300 animate__animated animate__slideInUp">
+        <div className="flex flex-row items-center gap-3 bg-gradient-to-r from-violet-500/10 to-indigo-500/10 border border-violet-400/30 rounded-xl shadow-lg p-4 hover:scale-105 hover:shadow-2xl hover:border-violet-400/60 transition-all duration-300 animate__animated animate__slideInUp">
           <img
-            className="w-8 h-8"
+            className="w-8 h-8 drop-shadow-lg"
             src={softwareArchitecture}
             alt="Backend Engineer"
           />
-          <div className="text-lg font-bold text-indigo-400">
+          <div className="text-lg font-bold bg-gradient-to-r from-violet-400 to-indigo-400 bg-clip-text text-transparent">
             Backend Engineer
           </div>
         </div>

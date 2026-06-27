@@ -18,9 +18,9 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-900 text-gray-100 flex flex-col overflow-x-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 text-gray-100 flex flex-col overflow-x-hidden">
       {/* Main Content */}
-      <main className="flex-1 flex flex-col md:flex-row items-center justify-center p-8 md:p-16 gap-8">
+      <main className="flex-1 flex flex-col md:flex-row items-center justify-center p-8 md:p-16 gap-12">
         {/* Image / Avatar */}
         <div>
           <img
@@ -35,41 +35,50 @@ const AboutMe = () => {
         </div>
 
         {/* About Text */}
-        <div
-          className={`max-w-xl text-md text-center md:text-left transition-all duration-1000 delay-200 ${
-            loaded ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
-          }`}>
-          <h2 className="text-3xl font-bold mb-4">
-            ⚡ Software Architect | .NET Expert | AI Enthusiast
-          </h2>
-          <p className="mb-4">
-            I am a Software Architect and Backend Engineer specializing in the
-            .NET, with expertise in ASP.NET Core (MVC & Web API), RESTful APIs,
-            SQL/NoSQL databases, and secure application design using JWT,
-            OAuth2, and Identity Server. I leverage Clean Code principles,
-            Design Patterns, and Microservices architecture to build scalable
-            and maintainable systems. Skilled in DevOps with Azure, Docker, and
-            Kubernetes, I also integrate Angular frontends.
-          </p>
-          <p className="mb-4">
-            I’m focused on designing and developing end-to-end solutions that
-            are: ⚡ Fast 🔒 Secure 📈 Scalable 🤝 Maintainable
-            <br />
-            <br />
-            Always exploring new technologies, solving complex problems, and
-            turning ideas into real-world products.
-          </p>
-          <p className="text-indigo-400 font-semibold">
-            “First, solve the problem. Then, write the code.”
-          </p>
-        </div>
+        
+<div
+  className={`max-w-xl text-md text-center md:text-left transition-all duration-1000 delay-200 ${
+    loaded ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
+  }`}
+>
+  <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent">
+    🚀 Backend Engineer | DevOps Enthusiast
+  </h2>
+
+  <p className="mb-4 text-gray-300 leading-relaxed">
+    I specialize in building scalable backend applications and RESTful APIs
+    using ASP.NET Core and modern software architecture principles. My focus is
+    on creating maintainable, high-performance systems that deliver reliable
+    solutions for real-world business needs.
+  </p>
+
+  <p className="mb-4 text-gray-300 leading-relaxed">
+    Experienced with C#, .NET, Asp.Net Core, Entity Framework Core, Linq, Identity, SQL Server, PostgreSQL, and
+    Microservices Architecture. I enjoy designing clean, efficient backends
+    while following best practices such as Clean Architecture, SOLID
+    principles, and Domain-Driven Design.
+  </p>
+
+  <p className="mb-4 text-gray-300 leading-relaxed">
+    Currently expanding my expertise in Go, Docker, Kubernetes, Cloud
+    Technologies, and modern DevOps practices to build cloud-native and
+    production-ready applications.
+  </p>
+
+  <p className="text-indigo-400 font-semibold text-lg">
+    "Building reliable software today while learning the technologies of
+    tomorrow."
+  </p>
+</div>
+
       </main>
 
       {/* Contact Section */}
       <section
-        className={`flex flex-col md:flex-row justify-center items-center gap-8 p-8 md:p-16 transition-all duration-1000 delay-400 ${
+        className={`flex flex-col md:flex-row justify-center items-center gap-12 p-8 md:p-16 border-t border-white/10 transition-all duration-1000 delay-400 ${
           loaded ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
-        }`}>
+        }`}
+      >
         <ContactCard
           icon={<FaGithub />}
           label="GitHub"
@@ -100,11 +109,13 @@ const AboutMe = () => {
       <section
         className={`flex justify-center items-center p-8 md:p-16 transition-all duration-1000 delay-500 ${
           loaded ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
-        }`}>
+        }`}
+      >
         <a
           href={resumeFile}
           download
-          className="flex items-center gap-3 bg-gray-800 p-5 rounded-xl shadow-lg transform transition-transform duration-300 hover:scale-105 hover:bg-indigo-800">
+          className="flex items-center gap-3 bg-gray-800 p-5 rounded-xl shadow-lg transform transition-transform duration-300 hover:scale-105 hover:bg-indigo-800"
+        >
           <FaFileDownload className="text-2xl text-indigo-400" />
           <span className="text-white font-semibold text-lg">
             Download Resume
@@ -116,7 +127,8 @@ const AboutMe = () => {
       <footer
         className={`p-6 text-center border-t border-gray-700 text-gray-500 transition-all duration-1000 delay-600 ${
           loaded ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
-        }`}>
+        }`}
+      >
         &copy; {new Date().getFullYear()} MyPortfolio. All rights reserved.
       </footer>
     </div>

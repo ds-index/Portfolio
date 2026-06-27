@@ -13,10 +13,10 @@ const ContactCard = ({ icon, label, link, tooltip }) => {
 				href={link}
 				target="_blank"
 				rel="noopener noreferrer"
-				className="flex flex-col items-center gap-2 text-gray-300 hover:text-indigo-400 transition-colors"
+				className="flex flex-col items-center gap-3 text-gray-400 hover:text-indigo-300 transition-all duration-300 p-4 rounded-xl hover:bg-white/5 border border-transparent hover:border-indigo-400/50"
 			>
-				<div className="text-4xl">{icon}</div>
-				<span className="text-sm">{label}</span>
+				<div className="text-5xl group-hover:scale-125 transition-transform duration-300 drop-shadow-lg">{icon}</div>
+				<span className="text-sm font-semibold">{label}</span>
 			</a>
 
 			{/* Tooltip */}

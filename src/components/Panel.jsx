@@ -15,7 +15,7 @@ function Panel({ children, onClose }) {
 				aria-hidden
 			/>
 			<div className="absolute inset-0 p-4 md:p-8 flex items-center justify-center">
-				<div className="relative w-full max-w-5xl rounded-3xl bg-gray-900 border border-white/10 shadow-2xl overflow-hidden">
+				<div className="relative w-full max-w-5xl rounded-3xl bg-gray-900 border border-white/10 shadow-2xl overflow-hidden ring-1 ring-white/5">
 					<button
 						onClick={onClose}
 						className="hover:cursor-pointer absolute top-4 right-4 z-10 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 px-3 py-1.5 text-sm font-semibold"

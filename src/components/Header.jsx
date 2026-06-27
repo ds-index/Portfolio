@@ -20,13 +20,13 @@ export default function Header() {
 	}, [location]);
 
 	return (
-		<header className="text-indigo-400 bg-gray-900 px-4 py-3 ">
+		<header className="text-indigo-400 bg-gray-900 px-4 py-4 border-b border-white/5 shadow-lg">
 			<div className="flex items-center justify-between md:w-2/3 mx-auto text-lg animate__animated animate__slideInDown">
-				<Link to="/">
+				<Link to="/" className="hover:scale-105 transition-transform duration-300">
 					<img
 						src={armanLogo}
 						alt="ArManDS Logo"
-						className="w-20 h-20 cursor-pointer"
+						className="w-20 h-20 cursor-pointer hover:drop-shadow-lg transition-all"
 					/>
 				</Link>
 
@@ -35,10 +35,10 @@ export default function Header() {
 						<Link
 							key={link.path}
 							to={link.path}
-							className={`cursor-pointer hover:text-indigo-300 border-b-2 ${
+							className={`cursor-pointer font-semibold transition-all duration-300 pb-2 ${
 								activeLink === link.path
-									? "border-b-indigo-400"
-									: "border-b-transparent hover:border-b-indigo-400"
+									? "text-indigo-300 border-b-2 border-indigo-400"
+									: "text-indigo-400/80 border-b-2 border-transparent hover:text-indigo-300 hover:border-indigo-400"
 							}`}
 						>
 							{link.name}
@@ -56,16 +56,16 @@ export default function Header() {
 			</div>
 
 			{isOpen && (
-				<div className="absolute top-20 left-0 w-full md:hidden flex flex-col gap-6 bg-gray-900 p-4 rounded-lg z-50">
+				<div className="absolute top-20 left-0 w-full md:hidden flex flex-col gap-4 bg-gray-900 border border-white/10 rounded-b-lg p-6 z-50 shadow-2xl">
 					{links.map((link) => (
 						<Link
 							key={link.path}
 							to={link.path}
 							onClick={() => setIsOpen(false)}
-							className={`cursor-pointer hover:text-gray-300 border-b-2 ${
+							className={`cursor-pointer font-semibold transition-all pb-2 border-b ${
 								activeLink === link.path
-									? "border-b-indigo-400"
-									: "border-b-transparent hover:border-b-indigo-400"
+									? "text-indigo-300 border-indigo-400"
+									: "text-indigo-400/80 border-transparent hover:text-indigo-300 hover:border-indigo-400"
 							}`}
 						>
 							{link.name}

@@ -6,6 +6,7 @@ import uni from "../assets/university-svgrepo-com.svg";
 import dotnet from "../assets/dotnet-svgrepo-com.svg";
 import python from "../assets/python-svgrepo-com.svg";
 import csharp from "../assets/csharp-svgrepo-com.svg";
+import golang from "../assets/go-svgrepo-com.svg";
 
 export default function Career() {
   const [selectedExp, setSelectedExp] = useState(null);
@@ -24,16 +25,16 @@ export default function Career() {
       description: "Issued by TVTO",
     },
     {
-      name: "JS/HTML/CSS Certificate",
-      icon: web,
-      date: "2020",
-      description: "Issued by TVTO",
-    },
-    {
       name: ".NET",
       icon: dotnet,
       date: "2021",
       description: "SoloLearn Certification",
+    },
+    {
+      name: "JS/HTML/CSS",
+      icon: web,
+      date: "2020",
+      description: "Issued by TVTO",
     },
     {
       name: "Javascript",
@@ -46,6 +47,12 @@ export default function Career() {
       icon: angular,
       date: "2023",
       description: "SoloLearn Certification",
+    },
+    {
+      name: "Go",
+      icon: golang,
+      date: "2025",
+      description: "Self Learning",
     },
     {
       name: "Python",
@@ -94,7 +101,7 @@ export default function Career() {
     {
       role: "Backend Developer",
       company: "Freelance",
-      duration: "Mar 2022 - Jul 2025",
+      duration: "Mar 2023 - Jul 2025",
       tech: [
         "C#.NET",
         "ASP.NET Core",
@@ -103,6 +110,9 @@ export default function Career() {
         "LINQ",
         "Dapper",
         "Sql Server",
+        "Identity Server",
+        "Serilog",
+        "AutoMapper",
         "JWT/OAuth",
         "Clean Code",
         "Design Patterns",
@@ -113,40 +123,68 @@ export default function Career() {
       description:
         "Built high performance, secure and robust enterprise grade API Services.",
     },
+        {
+      role: "Backend Developer",
+      company: "Kasra Sarmad",
+      duration: "Mar 2025 - Jul 2025",
+      tech: [
+        "C#.NET",
+        "ASP.NET Core",
+        "ASP.NET Core MVC",
+        "EF Core",
+        "LINQ",
+        "Sql Server",
+        "Identity Server",
+        "Identity UI",
+        "Serilog",
+        "AutoMapper",
+        "Clean Code",
+        "JS/HTML/CSS",
+        "JQuery",
+        "Bootstrap",
+        "RVD",
+        "Design Patterns",
+        "XUnit",
+      ],
+      description:
+        "Built high performance, secure and robust enterprise Web Applicaion.",
+    },
   ];
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white p-6 flex flex-col items-center">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 text-white p-6 flex flex-col items-center">
       {/* Certificates Section */}
-      <h1 className="text-4xl md:text-5xl font-bold text-indigo-400 mb-12 animate__animated animate__fadeInDown">
+      <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent mb-12 animate__animated animate__fadeInDown">
         Certificates
       </h1>
 
       <div className="relative w-full max-w-3xl flex flex-col items-center mb-20">
-        <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-indigo-700 -translate-x-1/2 hidden md:block"></div>
+        <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-indigo-500 via-violet-500 to-indigo-500 -translate-x-1/2 hidden md:block"></div>
 
         {certificates.map((cert, index) => {
           const isLeft = index % 2 === 0;
           return (
             <div
               key={cert.name}
-              className="w-full flex flex-row items-center mb-12 relative">
+              className="w-full flex flex-row items-center mb-12 relative"
+            >
               <div className="hidden md:block absolute md:left-1/2 w-6 h-6 bg-indigo-500 rounded-full -translate-x-1/2 top-2 z-10 animate__animated animate__zoomIn"></div>
               <div
-                className={`bg-gray-800 p-6 rounded-xl shadow-lg w-full flex flex-row items-center transition-transform duration-300 hover:scale-105
+                className={`bg-gradient-to-br from-gray-800/50 to-gray-800/20 border border-indigo-400/20 hover:border-indigo-400/50 p-6 rounded-xl shadow-lg w-full flex flex-row items-center transition-all duration-300 hover:scale-105 hover:shadow-2xl
                   ${
                     isLeft
                       ? "md:mr-8 md:ml-auto md:text-right"
                       : "md:ml-8 md:mr-auto md:text-left"
                   }
-                `}>
+                `}
+              >
                 <img
                   src={cert.icon}
                   alt={cert.name}
-                  className="w-12 h-12 mr-4 flex-shrink-0"
+                  className="w-12 h-12 mr-4 flex-shrink-0 drop-shadow-lg"
                 />
                 <div className="text-left md:text-inherit">
-                  <h2 className="text-xl font-bold text-indigo-400">
+                  <h2 className="text-xl font-bold bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent">
                     {cert.name}
                   </h2>
                   <p className="text-gray-300 mt-1 text-sm">{cert.date}</p>
@@ -159,7 +197,7 @@ export default function Career() {
       </div>
 
       {/* Work Experience Section */}
-      <h1 className="text-4xl md:text-5xl font-bold text-green-400 mb-12 animate__animated animate__fadeInDown">
+      <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent mb-12 animate__animated animate__fadeInDown">
         Work Experience
       </h1>
 
@@ -168,7 +206,8 @@ export default function Career() {
           <div
             key={idx}
             onClick={() => setSelectedExp(exp)}
-            className="bg-gray-800 p-6 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer relative">
+            className="bg-gradient-to-br from-gray-800/50 to-gray-800/20 border border-emerald-400/20 hover:border-emerald-400/50 p-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer relative"
+          >
             {/* Small click hint */}
             <div className="absolute top-4 right-4 text-indigo-400 text-sm flex items-center opacity-70 hover:opacity-100 transition-opacity">
               <svg
@@ -176,7 +215,8 @@ export default function Career() {
                 className="h-5 w-5 mr-1"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor">
+                stroke="currentColor"
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -187,7 +227,7 @@ export default function Career() {
               Click
             </div>
 
-            <h2 className="text-2xl font-bold text-green-400">{exp.role}</h2>
+            <h2 className="text-2xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">{exp.role}</h2>
             <p className="text-gray-300 mt-1 text-sm">{exp.company}</p>
             <p className="mt-2 text-gray-200">{exp.duration}</p>
           </div>
@@ -196,14 +236,15 @@ export default function Career() {
 
       {/* Modal */}
       {selectedExp && (
-        <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
-          <div className="bg-gray-800 rounded-xl p-8 w-11/12 max-w-lg relative shadow-2xl animate__animated animate__fadeInDown">
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex justify-center items-center z-50">
+          <div className="bg-gradient-to-br from-gray-800 to-gray-900 border border-white/10 rounded-2xl p-8 w-11/12 max-w-lg relative shadow-2xl animate__animated animate__fadeInDown">
             <button
               onClick={() => setSelectedExp(null)}
-              className="absolute top-4 right-4 text-gray-400 hover:text-white text-2xl font-bold">
-              &times;
+              className="absolute top-4 right-4 text-gray-400 hover:text-white hover:bg-white/10 rounded-full p-2 transition-all"
+            >
+              ×
             </button>
-            <h2 className="text-3xl font-bold text-green-400 mb-4">
+            <h2 className="text-3xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent mb-4">
               {selectedExp.role}
             </h2>
             <p className="text-gray-300 mb-2">Company: {selectedExp.company}</p>
