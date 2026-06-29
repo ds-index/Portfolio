@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 import armanDSImage from "../assets/IMG_20250814_150620_901.jpg";
 import ContactCard from "./ContactCard.jsx";
-import resumeFile from "../assets/Arman Darsanj.pdf";
+import resumeFile from "../assets/resume.pdf";
 
 const AboutMe = () => {
   const [loaded, setLoaded] = useState(false);
