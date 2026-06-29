@@ -43,7 +43,7 @@ const AboutMe = () => {
               I specialize in building scalable backend applications and RESTful APIs using ASP.NET Core and modern software architecture principles. My focus is on creating maintainable, high-performance systems that deliver reliable solutions for real-world business needs.
             </p>
             <p>
-              Experienced with C#, .NET, ASP.NET Core, Entity Framework Core, LINQ, Identity, SQL Server, PostgreSQL, and Microservices Architecture. I enjoy designing clean, efficient backends while following best practices such as Clean Architecture, SOLID principles, and Domain-Driven Design.
+              Experienced with C#, .NET, ASP.NET Core, Entity Framework Core, Dapper, LINQ, Identity, JWT, SQL Server, PostgreSQL, MongoDb and Microservices Architecture. I enjoy designing clean, efficient backends while following best practices such as Clean Architecture, SOLID principles, and Domain-Driven Design.
             </p>
             <p>
               Currently expanding my expertise in Go, Docker, Kubernetes, Cloud Technologies, and modern DevOps practices to build cloud-native and production-ready applications.
