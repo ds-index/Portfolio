@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Typeing from "./Typeing";
 import armanDSImgage from "../assets/IMG_20250814_150620_901.jpg";
 import softwareArchitecture from "../assets/code-svgrepo-com.svg";
@@ -5,48 +6,76 @@ import softwareEngineer from "../assets/software-svgrepo-com.svg";
 
 export default function Home() {
   return (
-    <div className="h-screen max-h-screen flex flex-col justify-center items-center bg-gray-900 text-white p-4 gap-6 overflow-hidden">
-      {/* Avatar */}
-      <div className="relative w-36 h-36 md:w-44 md:h-44">
-        <img
-          src={armanDSImgage}
-          alt="ArManDS"
-          className="w-full h-full rounded-full grayscale brightness-75 shadow-2xl border-4 border-indigo-500 animate__animated animate__zoomIn"
-        />
-        <span className="absolute inset-0 rounded-full border-4 border-indigo-500 opacity-40"></span>
-      </div>
+    <div className="min-h-[calc(100vh-5rem)] bg-[radial-gradient(circle_at_top_left,_rgba(79,70,229,0.18),_transparent_35%),linear-gradient(135deg,_#020617_0%,_#0f172a_40%,_#111827_100%)] px-4 py-8 text-white sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-6xl flex-col gap-8 rounded-[2rem] border border-white/10 bg-slate-900/70 p-6 shadow-[0_30px_80px_rgba(0,0,0,0.35)] backdrop-blur-xl md:flex-row md:items-center md:justify-between md:p-10 lg:p-14">
+        <div className="max-w-2xl text-center md:text-left">
+          <div className="mb-4 inline-flex items-center rounded-full border border-indigo-400/30 bg-indigo-500/10 px-3 py-1 text-sm font-medium text-indigo-200">
+            Available for impactful software projects
+          </div>
+          <h1 className="text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">
+            Hello, I’m <span className="bg-gradient-to-r from-indigo-300 via-violet-300 to-fuchsia-300 bg-clip-text text-transparent">Arman</span>
+          </h1>
+          <div className="mt-4 text-lg font-semibold text-slate-200 sm:text-xl">
+            <Typeing />
+          </div>
+          <p className="mt-5 text-base leading-8 text-slate-300 sm:text-lg">
+            I craft reliable backend systems, scalable APIs, and clean architecture solutions with a strong focus on performance, maintainability, and modern DevOps practices.
+          </p>
 
-      {/* Typing Text */}
-      <div className="text-center text-lg md:text-2xl font-semibold animate__animated animate__fadeIn">
-        <Typeing />
-      </div>
-
-      {/* Skills */}
-      <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-6">
-        <div className="flex flex-row items-center gap-3 bg-gradient-to-r from-indigo-500/10 to-violet-500/10 border border-indigo-400/30 rounded-xl shadow-lg p-4 hover:scale-105 hover:shadow-2xl hover:border-indigo-400/60 transition-all duration-300 animate__animated animate__slideInDown">
-          <img
-            className="w-8 h-8 drop-shadow-lg"
-            src={softwareEngineer}
-            alt="Software Architect"
-          />
-          <div className="text-lg font-bold bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent">
-            DevOps Enthusiast
+          <div className="mt-8 flex flex-wrap justify-center gap-3 md:justify-start">
+            <Link
+              to="/aboutme"
+              className="rounded-full bg-indigo-500 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-indigo-500/20 transition hover:-translate-y-0.5 hover:bg-indigo-400"
+            >
+              More about me
+            </Link>
+            <Link
+              to="/career"
+              className="rounded-full border border-white/10 bg-white/5 px-5 py-3 text-sm font-semibold text-slate-200 transition hover:-translate-y-0.5 hover:bg-white/10"
+            >
+              View my career
+            </Link>
           </div>
         </div>
 
-        <div className="flex flex-row items-center gap-3 bg-gradient-to-r from-violet-500/10 to-indigo-500/10 border border-violet-400/30 rounded-xl shadow-lg p-4 hover:scale-105 hover:shadow-2xl hover:border-violet-400/60 transition-all duration-300 animate__animated animate__slideInUp">
-          <img
-            className="w-8 h-8 drop-shadow-lg"
-            src={softwareArchitecture}
-            alt="Backend Engineer"
-          />
-          <div className="text-lg font-bold bg-gradient-to-r from-violet-400 to-indigo-400 bg-clip-text text-transparent">
-            Backend Engineer
+        <div className="relative flex items-center justify-center">
+          <div className="absolute inset-0 rounded-full bg-gradient-to-br from-indigo-500/30 via-violet-500/20 to-cyan-400/20 blur-3xl" />
+          <div className="relative rounded-[2rem] border border-white/10 bg-slate-950/70 p-3 shadow-2xl shadow-black/30">
+            <img
+              src={armanDSImgage}
+              alt="ArManDS"
+              className="h-56 w-56 rounded-[1.5rem] object-cover grayscale sm:h-72 sm:w-72"
+            />
+          </div>
+
+          <div className="absolute -left-3 top-6 rounded-full border border-indigo-300/30 bg-indigo-500/10 px-3 py-2 text-sm font-semibold text-indigo-100 shadow-lg backdrop-blur">
+            Backend
+          </div>
+          <div className="absolute -bottom-2 right-3 rounded-full border border-violet-300/30 bg-violet-500/10 px-3 py-2 text-sm font-semibold text-violet-100 shadow-lg backdrop-blur">
+            DevOps
           </div>
         </div>
       </div>
-      {/* Footer */}
-      <footer className="p-6 text-center border-t border-gray-700 text-gray-500">
+
+      <div className="mx-auto mt-8 flex max-w-5xl flex-col gap-4 md:flex-row">
+        <div className="flex flex-1 items-center gap-3 rounded-2xl border border-indigo-400/20 bg-gradient-to-r from-indigo-500/10 to-violet-500/10 p-4 shadow-lg shadow-indigo-950/20 backdrop-blur">
+          <img className="h-9 w-9" src={softwareEngineer} alt="Software Engineer" />
+          <div>
+            <div className="text-lg font-bold text-indigo-100">DevOps Enthusiast</div>
+            <p className="text-sm text-slate-300">Automation, reliability, and modern delivery.</p>
+          </div>
+        </div>
+
+        <div className="flex flex-1 items-center gap-3 rounded-2xl border border-violet-400/20 bg-gradient-to-r from-violet-500/10 to-indigo-500/10 p-4 shadow-lg shadow-violet-950/20 backdrop-blur">
+          <img className="h-9 w-9" src={softwareArchitecture} alt="Backend Engineer" />
+          <div>
+            <div className="text-lg font-bold text-violet-100">Backend Engineer</div>
+            <p className="text-sm text-slate-300">Scalable APIs and robust system design.</p>
+          </div>
+        </div>
+      </div>
+
+      <footer className="mx-auto mt-8 max-w-6xl border-t border-white/10 pt-6 text-center text-sm text-slate-400">
         &copy; {new Date().getFullYear()} MyPortfolio. All rights reserved.
       </footer>
     </div>

@@ -18,117 +18,65 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 text-gray-100 flex flex-col overflow-x-hidden">
-      {/* Main Content */}
-      <main className="flex-1 flex flex-col md:flex-row items-center justify-center p-8 md:p-16 gap-12">
-        {/* Image / Avatar */}
-        <div>
-          <img
-            src={armanDSImage}
-            alt="ArManDs"
-            className={`w-48 h-48 md:w-64 md:h-64 bg-gray-800 rounded-full flex items-center justify-center text-6xl font-bold text-indigo-500 mb-8 md:mb-0 md:mr-16 transform transition-all duration-1000 ${
-              loaded
-                ? "scale-100 rotate-0 opacity-100"
-                : "scale-50 rotate-45 opacity-0"
-            }`}
-          />
+    <div className="min-h-screen overflow-x-hidden bg-[radial-gradient(circle_at_top_left,_rgba(79,70,229,0.16),_transparent_35%),linear-gradient(135deg,_#020617_0%,_#0f172a_45%,_#111827_100%)] text-slate-100">
+      <main className="mx-auto flex max-w-7xl flex-col gap-10 px-4 py-10 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8 lg:py-16">
+        <div className={`transition-all duration-1000 ${loaded ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}>
+          <div className="rounded-[2rem] border border-white/10 bg-white/5 p-4 shadow-[0_20px_60px_rgba(0,0,0,0.25)] backdrop-blur-xl">
+            <img
+              src={armanDSImage}
+              alt="ArManDs"
+              className="h-56 w-56 rounded-[1.5rem] object-cover sm:h-72 sm:w-72"
+            />
+          </div>
         </div>
 
-        {/* About Text */}
-        
-<div
-  className={`max-w-xl text-md text-center md:text-left transition-all duration-1000 delay-200 ${
-    loaded ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
-  }`}
->
-  <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent">
-    🚀 Backend Engineer | DevOps Enthusiast
-  </h2>
+        <div className={`max-w-2xl text-center lg:text-left ${loaded ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}>
+          <div className="mb-4 inline-flex items-center rounded-full border border-indigo-400/30 bg-indigo-500/10 px-3 py-1 text-sm font-medium text-indigo-200">
+            Backend Engineer • DevOps Enthusiast
+          </div>
+          <h2 className="text-3xl font-black leading-tight text-white sm:text-4xl">
+            Building reliable software with modern architecture and a growth mindset.
+          </h2>
 
-  <p className="mb-4 text-gray-300 leading-relaxed">
-    I specialize in building scalable backend applications and RESTful APIs
-    using ASP.NET Core and modern software architecture principles. My focus is
-    on creating maintainable, high-performance systems that deliver reliable
-    solutions for real-world business needs.
-  </p>
+          <div className="mt-6 space-y-4 text-base leading-8 text-slate-300 sm:text-lg">
+            <p>
+              I specialize in building scalable backend applications and RESTful APIs using ASP.NET Core and modern software architecture principles. My focus is on creating maintainable, high-performance systems that deliver reliable solutions for real-world business needs.
+            </p>
+            <p>
+              Experienced with C#, .NET, ASP.NET Core, Entity Framework Core, LINQ, Identity, SQL Server, PostgreSQL, and Microservices Architecture. I enjoy designing clean, efficient backends while following best practices such as Clean Architecture, SOLID principles, and Domain-Driven Design.
+            </p>
+            <p>
+              Currently expanding my expertise in Go, Docker, Kubernetes, Cloud Technologies, and modern DevOps practices to build cloud-native and production-ready applications.
+            </p>
+          </div>
 
-  <p className="mb-4 text-gray-300 leading-relaxed">
-    Experienced with C#, .NET, Asp.Net Core, Entity Framework Core, Linq, Identity, SQL Server, PostgreSQL, and
-    Microservices Architecture. I enjoy designing clean, efficient backends
-    while following best practices such as Clean Architecture, SOLID
-    principles, and Domain-Driven Design.
-  </p>
-
-  <p className="mb-4 text-gray-300 leading-relaxed">
-    Currently expanding my expertise in Go, Docker, Kubernetes, Cloud
-    Technologies, and modern DevOps practices to build cloud-native and
-    production-ready applications.
-  </p>
-
-  <p className="text-indigo-400 font-semibold text-lg">
-    "Building reliable software today while learning the technologies of
-    tomorrow."
-  </p>
-</div>
-
+          <p className="mt-6 text-lg font-semibold text-indigo-300">
+            “Building reliable software today while learning the technologies of tomorrow.”
+          </p>
+        </div>
       </main>
 
-      {/* Contact Section */}
-      <section
-        className={`flex flex-col md:flex-row justify-center items-center gap-12 p-8 md:p-16 border-t border-white/10 transition-all duration-1000 delay-400 ${
-          loaded ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
-        }`}
-      >
-        <ContactCard
-          icon={<FaGithub />}
-          label="GitHub"
-          link="https://github.com/ds-index"
-          tooltip="Visit my GitHub repositories : ds-index"
-        />
-        <ContactCard
-          icon={<FaLinkedin />}
-          label="LinkedIn"
-          link="https://www.linkedin.com/in/arman-ds-b3b967291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-          tooltip="Connect with me on LinkedIn : ArMan DS"
-        />
-        <ContactCard
-          icon={<FaEnvelope />}
-          label="Email"
-          link="mailto:ds.limited.ar@gmail.com"
-          tooltip="Send me an email : ds.limited.ar@gmail.com"
-        />
-        <ContactCard
-          icon={<FaPhone />}
-          label="Phone"
-          link="tel:+989123456789"
-          tooltip="Call me directly"
-        />
+      <section className={`mx-auto max-w-7xl px-4 pb-8 sm:px-6 lg:px-8 ${loaded ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}>
+        <div className="grid gap-4 rounded-[2rem] border border-white/10 bg-slate-900/70 p-6 shadow-[0_20px_60px_rgba(0,0,0,0.18)] backdrop-blur-xl md:grid-cols-2 xl:grid-cols-4">
+          <ContactCard icon={<FaGithub />} label="GitHub" link="https://github.com/ds-index" tooltip="Visit my GitHub repositories : ds-index" />
+          <ContactCard icon={<FaLinkedin />} label="LinkedIn" link="https://www.linkedin.com/in/arman-ds-b3b967291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" tooltip="Connect with me on LinkedIn : ArMan DS" />
+          <ContactCard icon={<FaEnvelope />} label="Email" link="mailto:ds.limited.ar@gmail.com" tooltip="Send me an email : ds.limited.ar@gmail.com" />
+          <ContactCard icon={<FaPhone />} label="Phone" link="tel:+989123456789" tooltip="Call me directly" />
+        </div>
       </section>
 
-      {/* Resume Section */}
-      <section
-        className={`flex justify-center items-center p-8 md:p-16 transition-all duration-1000 delay-500 ${
-          loaded ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
-        }`}
-      >
+      <section className={`mx-auto flex max-w-7xl justify-center px-4 pb-10 sm:px-6 lg:px-8 ${loaded ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}>
         <a
           href={resumeFile}
           download
-          className="flex items-center gap-3 bg-gray-800 p-5 rounded-xl shadow-lg transform transition-transform duration-300 hover:scale-105 hover:bg-indigo-800"
+          className="flex items-center gap-3 rounded-full border border-indigo-400/30 bg-indigo-500/10 px-5 py-3 text-white shadow-lg shadow-indigo-950/20 transition duration-300 hover:-translate-y-1 hover:bg-indigo-500/20"
         >
-          <FaFileDownload className="text-2xl text-indigo-400" />
-          <span className="text-white font-semibold text-lg">
-            Download Resume
-          </span>
+          <FaFileDownload className="text-xl text-indigo-300" />
+          <span className="text-sm font-semibold sm:text-base">Download Resume</span>
         </a>
       </section>
 
-      {/* Footer */}
-      <footer
-        className={`p-6 text-center border-t border-gray-700 text-gray-500 transition-all duration-1000 delay-600 ${
-          loaded ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
-        }`}
-      >
+      <footer className={`border-t border-white/10 px-4 py-6 text-center text-sm text-slate-400 ${loaded ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}>
         &copy; {new Date().getFullYear()} MyPortfolio. All rights reserved.
       </footer>
     </div>

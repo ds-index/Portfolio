@@ -89,8 +89,8 @@ export default function Skills() {
     level === "Advanced"
       ? "bg-emerald-400"
       : level === "Intermediate"
-      ? "bg-amber-400"
-      : "bg-red-500";
+        ? "bg-amber-400"
+        : "bg-red-500";
 
   useEffect(() => {
     cardRefs.current = cardRefs.current.slice(0, categories.length);
@@ -112,73 +112,79 @@ export default function Skills() {
     );
 
     cardRefs.current.forEach((ref) => ref && observer.observe(ref));
-    return () =>
-      cardRefs.current.forEach((ref) => ref && observer.unobserve(ref));
+    return () => cardRefs.current.forEach((ref) => ref && observer.unobserve(ref));
   }, [categories.length]);
 
   return (
-    <div className="min-h-screen flex flex-col items-center bg-gray-900 text-gray-100 p-6 gap-8">
-      <h1 className="text-3xl md:text-5xl font-bold mb-4 text-indigo-400">
-        My Skills
-      </h1>
+    <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(79,70,229,0.16),_transparent_35%),linear-gradient(135deg,_#020617_0%,_#0f172a_30%,_#111827_100%)] px-4 py-10 text-slate-100 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-6xl">
+        <div className="mb-8 text-center">
+          <div className="mb-3 inline-flex rounded-full border border-indigo-400/25 bg-indigo-500/10 px-3 py-1 text-sm font-medium text-indigo-200">
+            Core competencies
+          </div>
+          <h1 className="text-3xl font-black sm:text-4xl md:text-5xl">My Skills</h1>
+          <p className="mx-auto mt-3 max-w-2xl text-base text-slate-300 sm:text-lg">
+            A practical overview of the tools, frameworks, and engineering practices I work with.
+          </p>
+        </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-5xl">
-        {categories.map((cat, index) => (
-          <button
-            key={cat.key}
-            data-index={index}
-            ref={(el) => (cardRefs.current[index] = el)}
-            onClick={() => setActive(cat.key)}
-            className={`group relative overflow-hidden rounded-2xl p-6 text-left shadow-lg transition-all duration-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-400 focus:ring-offset-gray-900 hover:scale-[1.02] ${
-              visible[index]
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-6"
-            } bg-gradient-to-br ${cat.color}`}
-          >
-            <div className="flex items-center justify-between">
-              <h2 className="text-2xl md:text-3xl font-extrabold drop-shadow-sm">
-                {cat.title}
-              </h2>
-              <span className="text-sm bg-white/15 px-2.5 py-1 rounded-full border border-white/20">
-                View
-              </span>
-            </div>
-            <ul className="mt-4 grid grid-cols-2 gap-3 text-sm">
-              {cat.items.slice(0, 6).map(({ name, level }) => (
-                <li key={name} className="bg-black/10 rounded-md px-3 py-2">
-                  <div className="flex items-center justify-between gap-4">
-                    <span className="font-medium truncate">{name}</span>
-                    <span className="ml-2 text-xs text-gray-100/90">{level}</span>
-                  </div>
+        <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2">
+          {categories.map((cat, index) => (
+            <button
+              key={cat.key}
+              data-index={index}
+              ref={(el) => (cardRefs.current[index] = el)}
+              onClick={() => setActive(cat.key)}
+              className={`group relative overflow-hidden rounded-[1.75rem] border border-white/10 p-6 text-left shadow-[0_20px_60px_rgba(0,0,0,0.22)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_28px_70px_rgba(0,0,0,0.28)] focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 focus:ring-offset-slate-950 ${
+                visible[index] ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
+              } bg-gradient-to-br ${cat.color}`}
+            >
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(255,255,255,0.22),_transparent_40%)]" />
+              <div className="relative flex items-center justify-between">
+                <h2 className="text-2xl font-extrabold text-white md:text-3xl">{cat.title}</h2>
+                <span className="rounded-full border border-white/20 bg-white/15 px-2.5 py-1 text-sm font-semibold text-white/90">
+                  View
+                </span>
+              </div>
+              <ul className="relative mt-4 grid grid-cols-2 gap-3 text-sm">
+                {cat.items.slice(0, 6).map(({ name, level }) => (
+                  <li key={name} className="rounded-xl border border-white/15 bg-black/10 px-3 py-2 backdrop-blur">
+                    <div className="flex items-center justify-between gap-4">
+                      <span className="truncate font-medium text-white">{name}</span>
+                      <span className="ml-2 text-[11px] uppercase tracking-wide text-white/90">{level}</span>
+                    </div>
 
-                  <div className="mt-2 h-2 w-full bg-white/10 rounded-full overflow-hidden">
-                    <div
-                      className={`${levelColor(level)} h-full rounded-full transition-all duration-500`}
-                      style={{ width: `${levelPercent(level)}%` }}
-                    />
-                  </div>
-                </li>
-              ))}
-              {cat.items.length > 6 && (
-                <li className="text-xs opacity-90">+{cat.items.length - 6} more…</li>
-              )}
-            </ul>
-          </button>
-        ))}
+                    <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-white/10">
+                      <div
+                        className={`${levelColor(level)} h-full rounded-full transition-all duration-500`}
+                        style={{ width: `${levelPercent(level)}%` }}
+                      />
+                    </div>
+                  </li>
+                ))}
+                {cat.items.length > 6 && (
+                  <li className="col-span-2 rounded-xl border border-white/15 bg-black/10 px-3 py-2 text-sm text-white/90">
+                    +{cat.items.length - 6} more…
+                  </li>
+                )}
+              </ul>
+            </button>
+          ))}
+        </div>
+
+        {active && (
+          <Panel onClose={() => setActive(null)}>
+            <CategoryDetails
+              category={categories.find((c) => c.key === active)}
+              onClose={() => setActive(null)}
+            />
+          </Panel>
+        )}
+
+        <footer className="mt-10 border-t border-white/10 pt-6 text-center text-sm text-slate-400">
+          &copy; {new Date().getFullYear()} MyPortfolio. All rights reserved.
+        </footer>
       </div>
-
-      {active && (
-        <Panel onClose={() => setActive(null)}>
-          <CategoryDetails
-            category={categories.find((c) => c.key === active)}
-            onClose={() => setActive(null)}
-          />
-        </Panel>
-      )}
-
-      <footer className="p-6 text-center text-gray-400">
-        &copy; {new Date().getFullYear()} MyPortfolio. All rights reserved.
-      </footer>
     </div>
   );
 }
