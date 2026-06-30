@@ -25,7 +25,6 @@ export default function Skills() {
         { name: "EF Core", level: "Advanced" },
         { name: "LINQ", level: "Advanced" },
         { name: "Dapper", level: "Intermediate" },
-        { name: "Go", level: "Basic" },
       ],
     },
     {
@@ -35,7 +34,6 @@ export default function Skills() {
       items: [
         { name: "JS/HTML/CSS", level: "Advanced" },
         { name: "Typescript", level: "Advanced" },
-        { name: "React", level: "Advanced" },
         { name: "Angular", level: "Intermediate" },
         { name: "Tailwind", level: "Intermediate" },
         { name: "Bootstrap", level: "Intermediate" },
@@ -52,7 +50,6 @@ export default function Skills() {
         { name: "Kubernetes", level: "Basic" },
         { name: "CI/CD", level: "Basic" },
         { name: "GitFlow", level: "Basic" },
-        { name: "Jenkins", level: "Basic" },
         { name: "Sql Server", level: "Intermediate" },
         { name: "Postgresql", level: "Intermediate" },
         { name: "MongoDb", level: "Intermediate" },
@@ -79,21 +76,51 @@ export default function Skills() {
         { name: "Swagger", level: "Intermediate" },
       ],
     },
+    {
+      key: "AI",
+      title: "AI",
+      color: "from-blue-800 to-indigo-900",
+      items: [
+        { name: "Python", level: "Advanced" },
+        { name: "TensorFlow", level: "Learning" },
+        { name: "PyTorch", level: "Learning" },
+        { name: "LLM Frameworks", level: "Learning" },
+        { name: "Machine Learning", level: "Learning" },
+        { name: "Deep Learning", level: "Learning" },
+        { name: "Data Structures", level: "Basic" },
+        { name: "Algorithms", level: "Basic" },
+        { name: "Advanced Mathematics", level: "Basic" },
+        { name: "Pandas", level: "Learning" },
+        { name: "NumPy", level: "Learning" },
+        { name: "Matplotlib", level: "Learning" },
+        { name: "Seeborn", level: "Learning" },
+        { name: "Scikit-Learn", level: "Learning"},
+        { name: "Jupyter", level: "Learning" },
+        { name: "Model Deployment", level: "Learning" },
+        { name: "AI Automation", level: "Learning" }
+      ]
+    }
   ];
 
   const cardRefs = useRef([]);
   const [visible, setVisible] = useState([]);
   const [active, setActive] = useState(null);
 
+  // ✅ تغییر: اضافه شدن سطح Learning
   const levelPercent = (level) =>
-    level === "Advanced" ? 100 : level === "Intermediate" ? 65 : 28;
+    level === "Advanced" ? 100 : 
+    level === "Intermediate" ? 65 : 
+    level === "Learning" ? 15 : 28;
 
+  // ✅ تغییر: اضافه شدن استایل مخصوص Learning
   const levelColor = (level) =>
     level === "Advanced"
       ? "bg-emerald-400"
       : level === "Intermediate"
-        ? "bg-amber-400"
-        : "bg-red-500";
+      ? "bg-amber-400"
+      : level === "Learning"
+      ? "bg-indigo-400 border border-dashed border-indigo-200"
+      : "bg-red-500";
 
   useEffect(() => {
     cardRefs.current = cardRefs.current.slice(0, categories.length);

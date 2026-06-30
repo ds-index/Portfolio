@@ -32,7 +32,7 @@ const AboutMe = () => {
 
         <div className={`max-w-2xl text-center lg:text-left ${loaded ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}>
           <div className="mb-4 inline-flex items-center rounded-full border border-indigo-400/30 bg-indigo-500/10 px-3 py-1 text-sm font-medium text-indigo-200">
-            Backend Engineer • DevOps Enthusiast
+            Backend Engineer • AI Enthusiast
           </div>
           <h2 className="text-3xl font-black leading-tight text-white sm:text-4xl">
             Building reliable software with modern architecture and a growth mindset.
@@ -43,10 +43,10 @@ const AboutMe = () => {
               I specialize in building scalable backend applications and RESTful APIs using ASP.NET Core and modern software architecture principles. My focus is on creating maintainable, high-performance systems that deliver reliable solutions for real-world business needs.
             </p>
             <p>
-              Experienced with C#, .NET, ASP.NET Core, Entity Framework Core, Dapper, LINQ, Identity, JWT, SQL Server, PostgreSQL, MongoDb and Microservices Architecture. I enjoy designing clean, efficient backends while following best practices such as Clean Architecture, SOLID principles, and Domain-Driven Design.
+              Experienced with C#, .NET, ASP.NET Core, Entity Framework Core, Dapper, LINQ, Identity, JWT, SQL Server, PostgreSQL, MongoDb, Docker, K8S, Git and Microservices Architecture. I enjoy designing clean, efficient backends while following best practices such as Clean Architecture, SOLID principles, and Domain-Driven Design.
             </p>
             <p>
-              Currently expanding my expertise in Go, Docker, Kubernetes, Cloud Technologies, and modern DevOps practices to build cloud-native and production-ready applications.
+              Currently expanding my expertise in Python, ML, DL, and LLM frameworks — building intelligent, production-ready systems with a focus on AI-driven automation and model deployment. Also strengthening core fundamentals in advanced math, data structures, and algorithms for deeper AI proficiency.
             </p>
           </div>
 

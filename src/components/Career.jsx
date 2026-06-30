@@ -1,12 +1,11 @@
 import { useState } from "react";
-import js from "../assets/javascript-svgrepo-com.svg";
+import ts from "../assets/typescript-icon-svgrepo-com.svg";
 import angular from "../assets/angular.svg";
 import web from "../assets/web-page-browser-analysis-screen-svgrepo-com.svg";
 import uni from "../assets/university-svgrepo-com.svg";
 import dotnet from "../assets/dotnet-svgrepo-com.svg";
 import python from "../assets/python-svgrepo-com.svg";
 import csharp from "../assets/csharp-svgrepo-com.svg";
-import golang from "../assets/go-svgrepo-com.svg";
 
 export default function Career() {
   const [selectedExp, setSelectedExp] = useState(null);
@@ -30,6 +29,12 @@ export default function Career() {
       date: "2021",
       description: "SoloLearn Certification",
     },
+        {
+      name: "Python",
+      icon: python,
+      date: "2022",
+      description: "SoloLearn Certification",
+    },
     {
       name: "JS/HTML/CSS",
       icon: web,
@@ -37,8 +42,8 @@ export default function Career() {
       description: "Issued by TVTO",
     },
     {
-      name: "Javascript",
-      icon: js,
+      name: "Typescript",
+      icon: ts,
       date: "2022",
       description: "SoloLearn Certification",
     },
@@ -46,18 +51,6 @@ export default function Career() {
       name: "Angular",
       icon: angular,
       date: "2023",
-      description: "SoloLearn Certification",
-    },
-    {
-      name: "Go",
-      icon: golang,
-      date: "2025",
-      description: "Self Learning",
-    },
-    {
-      name: "Python",
-      icon: python,
-      date: "2022",
       description: "SoloLearn Certification",
     },
   ];

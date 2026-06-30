@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import Typeing from "./Typeing";
 import armanDSImgage from "../assets/IMG_20250814_150620_901.jpg";
 import softwareArchitecture from "../assets/code-svgrepo-com.svg";
-import softwareEngineer from "../assets/software-svgrepo-com.svg";
+// import softwareEngineer from "../assets/software-svgrepo-com.svg";
+import aiLogo from "../assets/artificial-intelligence-ai-icon.webp";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
             <Typeing />
           </div>
           <p className="mt-5 text-base leading-8 text-slate-300 sm:text-lg">
-            I craft reliable backend systems, scalable APIs, and clean architecture solutions with a strong focus on performance, maintainability, and modern DevOps practices.
+           I build scalable, high-performance backend systems with clean architecture and DevOps rigor—while actively learning AI to inject smarter logic, automation, and quality into every layer.
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-3 md:justify-start">
@@ -52,17 +53,17 @@ export default function Home() {
             Backend
           </div>
           <div className="absolute -bottom-2 right-3 rounded-full border border-violet-300/30 bg-violet-500/10 px-3 py-2 text-sm font-semibold text-violet-100 shadow-lg backdrop-blur">
-            DevOps
+            Artificial Intelligence
           </div>
         </div>
       </div>
 
       <div className="mx-auto mt-8 flex max-w-5xl flex-col gap-4 md:flex-row">
         <div className="flex flex-1 items-center gap-3 rounded-2xl border border-indigo-400/20 bg-gradient-to-r from-indigo-500/10 to-violet-500/10 p-4 shadow-lg shadow-indigo-950/20 backdrop-blur">
-          <img className="h-9 w-9" src={softwareEngineer} alt="Software Engineer" />
+          <img className="h-11 w-11" src={aiLogo} alt="Software Engineer" />
           <div>
-            <div className="text-lg font-bold text-indigo-100">DevOps Enthusiast</div>
-            <p className="text-sm text-slate-300">Automation, reliability, and modern delivery.</p>
+            <div className="text-lg font-bold text-indigo-100">AI Enthusiast</div>
+            <p className="text-sm text-slate-300">Automation, reliability, and adaptive intelligence.</p>
           </div>
         </div>
 
