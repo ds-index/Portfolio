@@ -30,30 +30,35 @@ const AboutMe = () => {
           </div>
         </div>
 
-        <div className={`max-w-2xl text-center lg:text-left ${loaded ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}>
-          <div className="mb-4 inline-flex items-center rounded-full border border-indigo-400/30 bg-indigo-500/10 px-3 py-1 text-sm font-medium text-indigo-200">
-            Backend Engineer • AI Enthusiast
-          </div>
-          <h2 className="text-3xl font-black leading-tight text-white sm:text-4xl">
-            Building reliable software with modern architecture and a growth mindset.
-          </h2>
+<div className={`max-w-2xl text-center lg:text-left ${loaded ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}>
+  <div className="mb-4 inline-flex items-center rounded-full border border-indigo-400/30 bg-indigo-500/10 px-3 py-1 text-sm font-medium text-indigo-200">
+    Software Engineer • Full-Stack Engineer • DevOps & Cloud Enthusiast
+  </div>
 
-          <div className="mt-6 space-y-4 text-base leading-8 text-slate-300 sm:text-lg">
-            <p>
-              I specialize in building scalable backend applications and RESTful APIs using ASP.NET Core and modern software architecture principles. My focus is on creating maintainable, high-performance systems that deliver reliable solutions for real-world business needs.
-            </p>
-            <p>
-              Experienced with C#, .NET, ASP.NET Core, Entity Framework Core, Dapper, LINQ, Identity, JWT, SQL Server, PostgreSQL, MongoDb, Docker, K8S, Git and Microservices Architecture. I enjoy designing clean, efficient backends while following best practices such as Clean Architecture, SOLID principles, and Domain-Driven Design.
-            </p>
-            <p>
-              Currently expanding my expertise in Python, ML, DL, and LLM frameworks — building intelligent, production-ready systems with a focus on AI-driven automation and model deployment. Also strengthening core fundamentals in advanced math, data structures, and algorithms for deeper AI proficiency.
-            </p>
-          </div>
+  <h2 className="text-3xl font-black leading-tight text-white sm:text-4xl">
+    Building scalable applications with modern architecture and cloud-native technologies.
+  </h2>
 
-          <p className="mt-6 text-lg font-semibold text-indigo-300">
-            “Building reliable software today while learning the technologies of tomorrow.”
-          </p>
-        </div>
+  <div className="mt-6 space-y-4 text-base leading-8 text-slate-300 sm:text-lg">
+    <p>
+      I specialize in building scalable backend applications and RESTful APIs using ASP.NET Core and modern software architecture principles. My focus is on creating maintainable, high-performance systems that solve real-world business challenges.
+    </p>
+
+<p>
+  Experienced with C#, .NET, ASP.NET Core, Entity Framework Core, Dapper, LINQ, Identity, JWT, SQL Server, PostgreSQL, MongoDB, Docker, Git, and Microservices Architecture. I enjoy designing clean and reliable software while following Clean Architecture, SOLID principles, and Domain-Driven Design.
+</p>
+
+<p>
+  Currently expanding my expertise in React, Next.js, Azure, Kubernetes, GitHub Actions, and cloud-native development. Passionate about DevOps, automation, scalable infrastructure, and building modern end-to-end applications.
+</p>
+
+  </div>
+
+  <p className="mt-6 text-lg font-semibold text-indigo-300">
+    “Building scalable, reliable, and cloud-native solutions through modern engineering practices.”
+  </p>
+</div>
+
       </main>
 
       <section className={`mx-auto max-w-7xl px-4 pb-8 sm:px-6 lg:px-8 ${loaded ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}>
