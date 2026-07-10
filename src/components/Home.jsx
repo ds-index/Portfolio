@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import Typeing from "./Typeing";
-import armanDSImgage from "../assets/IMG_20250814_150620_901.jpg";
+import armanDSImgage from "../assets//00ss23 (2).png";
 import softwareArchitecture from "../assets/code-svgrepo-com.svg";
 import softwareEngineer from "../assets/software-svgrepo-com.svg";
+import aiLogo from "../assets/artificial-intelligence-ai-icon.webp";
 
 export default function Home() {
   return (
@@ -19,7 +20,8 @@ export default function Home() {
             <Typeing />
           </div>
           <p className="mt-5 text-base leading-8 text-slate-300 sm:text-lg">
-           I build scalable and high-performance applications using .NET, clean architecture, and modern engineering practices. Currently focused on cloud-native development, DevOps, Azure, Docker, Kubernetes, React, and Next.js.
+          Backend Engineer focused on building scalable and high-performance systems with .NET, Clean Architecture, and modern software engineering practices. Passionate about system design and distributed systems. Currently learning AI, Machine Learning, Deep Learning, LLMs, RAG, and AI Agents.
+
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-3 md:justify-start">
@@ -49,28 +51,29 @@ export default function Home() {
           </div>
 
           <div className="absolute -left-3 top-6 rounded-full border border-indigo-300/30 bg-indigo-500/10 px-3 py-2 text-sm font-semibold text-indigo-100 shadow-lg backdrop-blur">
-            Full-Stack
+            Backend Engineer
           </div>
           <div className="absolute -bottom-2 right-3 rounded-full border border-violet-300/30 bg-violet-500/10 px-3 py-2 text-sm font-semibold text-violet-100 shadow-lg backdrop-blur">
-            DevOps & Cloud
+            AI
           </div>
         </div>
       </div>
 
       <div className="mx-auto mt-8 flex max-w-5xl flex-col gap-4 md:flex-row">
         <div className="flex flex-1 items-center gap-3 rounded-2xl border border-indigo-400/20 bg-gradient-to-r from-indigo-500/10 to-violet-500/10 p-4 shadow-lg shadow-indigo-950/20 backdrop-blur">
-          <img className="h-11 w-11" src={softwareEngineer} alt="Software Engineer" />
+          <img className="h-11 w-11" src={aiLogo} alt="Software Engineer" />
           <div>
-            <div className="text-lg font-bold text-indigo-100">DevOps & Cloud</div>
-            <p className="text-sm text-slate-300">Scalable architecture, reliability, and automation.</p>
+            <div className="text-lg font-bold text-indigo-100">AI Explorer</div>
+            <p className="text-sm text-slate-300">Scalable architecture, system reliability, and AI-driven solutions.
+</p>
           </div>
         </div>
 
         <div className="flex flex-1 items-center gap-3 rounded-2xl border border-violet-400/20 bg-gradient-to-r from-violet-500/10 to-indigo-500/10 p-4 shadow-lg shadow-violet-950/20 backdrop-blur">
           <img className="h-9 w-9" src={softwareArchitecture} alt="Backend Engineer" />
           <div>
-            <div className="text-lg font-bold text-violet-100">Full-Stack Engineer</div>
-            <p className="text-sm text-slate-300">Scalable APIs, Moderns UI and robust system design.</p>
+            <div className="text-lg font-bold text-violet-100">Backend Engineer</div>
+            <p className="text-sm text-slate-300">Scalable APIs and robust system design.</p>
           </div>
         </div>
       </div>
