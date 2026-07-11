@@ -6,7 +6,7 @@ import {
     FaPhone,
     FaFileDownload,
 } from "react-icons/fa";
-import armanDSImage from "../assets/s1.png";
+import armanDSImage from "../assets/s2.png";
 import ContactCard from "./ContactCard.jsx";
 import resumeFile from "../assets/Arman Darsanj-Resume.pdf";
 

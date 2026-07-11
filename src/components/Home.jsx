@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Typeing from "./Typeing";
-import armanDSImgage from "../assets/s1.png";
+import armanDSImgage from "../assets/s2.png";
 import softwareArchitecture from "../assets/code-svgrepo-com.svg";
 // import softwareEngineer from "../assets/software-svgrepo-com.svg";
 import aiLogo from "../assets/artificial-intelligence-ai-icon.webp";
