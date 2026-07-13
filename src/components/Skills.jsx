@@ -32,7 +32,7 @@ export default function Skills() {
         {
             key: "Frontend",
             title: "Frontend",
-            color: "from-emerald-500 to-teal-600",
+            color: "from-yellow-400 to-amber-500",
             items: [
                 { name: "Javascript", level: "Advanced" },
                 { name: "HTML/CSS", level: "Advanced" },
@@ -47,7 +47,7 @@ export default function Skills() {
         {
             key: "DB & Devops & Cloud",
             title: "DB & Devops & Cloud",
-            color: "from-amber-500 to-orange-600",
+            color: "from-emerald-500 to-teal-600",
             items: [
                 { name: "Sql Server", level: "Intermediate" },
                 { name: "Postgresql", level: "Intermediate" },
@@ -86,29 +86,28 @@ export default function Skills() {
                 { name: "EDD", level: "Intermediate" },
             ],
         },
-{
-    key: "AI & Machine Learning",
-    title: "AI & Machine Learning",
-    color: "from-violet-800 to-fuchsia-900",
-    items: [
-        { name: "Artificial Intelligence", level: "Learning" },
-        { name: "Machine Learning", level: "Learning" },
-        { name: "Deep Learning", level: "Learning" },
-        { name: "Python", level: "Learning" },
-        { name: "FastAPI", level: "Basic" },
-        { name: "PyTorch", level: "Learning" },
-        { name: "TensorFlow", level: "Learning" },
-        { name: "Scikit-Learn", level: "Learning" },
-        { name: "NumPy", level: "Learning" },
-        { name: "Pandas", level: "Learning" },
-        { name: "Large Language Models (LLMs)", level: "Learning" },
-        { name: "Prompt Engineering", level: "Learning" },
-        { name: "RAG", level: "Learning" },
-        { name: "AI Agents", level: "Learning" },
-        { name: "Vector Databases", level: "Learning" },
-    ],
-}
-
+        {
+            key: "Learning",
+            title: "Learning",
+            color: "from-sky-700 via-cyan-800 to-teal-900",
+            items: [
+                { name: "Golang", level: "Learning" },
+                { name: "Docker", level: "Intermediate" },
+                { name: "Kubernetes", level: "Basic" },
+                { name: "CI/CD Pipelines", level: "Learning" },
+                { name: "GitHub Actions", level: "Learning" },
+                { name: "Jenkins", level: "Learning" },
+                { name: "Linux Administration", level: "Learning" },
+                { name: "Nginx", level: "Learning" },
+                { name: "Cloud Computing", level: "Learning" },
+                { name: "AWS", level: "Learning" },
+                { name: "Terraform", level: "Learning" },
+                { name: "Infrastructure as Code (IaC)", level: "Learning" },
+                { name: "Monitoring & Observability", level: "Learning" },
+                { name: "Prometheus", level: "Learning" },
+                { name: "Grafana", level: "Learning" },
+            ],
+        },
     ];
 
     const cardRefs = useRef([]);

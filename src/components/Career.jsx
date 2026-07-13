@@ -1,13 +1,13 @@
 import { useState } from "react";
 import ts from "../assets/typescript-icon-svgrepo-com.svg";
 import angular from "../assets/angular.svg";
-import web from "../assets/web-page-browser-analysis-screen-svgrepo-com.svg";
+import golang from "../assets/go-svgrepo-com.svg";
 import uni from "../assets/university-svgrepo-com.svg";
 import dotnet from "../assets/dotnet-svgrepo-com.svg";
 import python from "../assets/python-svgrepo-com.svg";
 import csharp from "../assets/csharp-svgrepo-com.svg";
 import react from "../assets/react.svg";
-import js from "../assets/javascript-svgrepo-com.svg"
+import js from "../assets/javascript-svgrepo-com.svg";
 
 export default function Career() {
     const [selectedExp, setSelectedExp] = useState(null);
@@ -32,6 +32,12 @@ export default function Career() {
             description: "SoloLearn Certification",
         },
         {
+            name: "Golang",
+            icon: golang,
+            date: "2025",
+            description: "Google",
+        },
+        {
             name: "Python",
             icon: python,
             date: "2022",
@@ -48,6 +54,12 @@ export default function Career() {
             icon: js,
             date: "2020",
             description: "Issued by TVTO",
+        },
+        {
+            name: "React",
+            icon: react,
+            date: "2022",
+            description: "Meta",
         },
         {
             name: "Angular",

@@ -34,14 +34,14 @@ const AboutMe = () => {
                 <div
                     className={`max-w-2xl text-center lg:text-left ${loaded ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}>
                     <div className="mb-4 inline-flex items-center rounded-full border border-indigo-400/30 bg-indigo-500/10 px-3 py-1 text-sm font-medium text-indigo-200">
-                        Backend Engineer • AI Enthusiast • Software Architecture
+                        Backend Engineer • DevOps Enthusiast • Software
+                        Architecture
                     </div>
 
                     <h2 className="text-3xl font-black leading-tight text-white sm:text-4xl">
-                        Building scalable backend systems and intelligent
+                        Building scalable backend systems and cloud-native
                         applications with modern architecture.
                     </h2>
-
                     <div className="mt-6 space-y-4 text-base leading-8 text-slate-300 sm:text-lg">
                         <p>
                             I specialize in building scalable backend
@@ -62,18 +62,17 @@ const AboutMe = () => {
                         </p>
 
                         <p>
-                            Currently expanding my expertise in Artificial
-                            Intelligence, Machine Learning, Deep Learning, LLMs,
-                            RAG, AI Agents, FastAPI, and Python. Passionate
-                            about building intelligent systems that combine
-                            strong backend engineering with modern AI
-                            capabilities.
+                            Currently expanding my expertise in Golang, DevOps,
+                            Cloud Computing, Infrastructure Automation, CI/CD,
+                            and cloud-native technologies. Passionate about
+                            building scalable, resilient systems and
+                            continuously improving development and deployment
+                            workflows.
                         </p>
                     </div>
-
                     <p className="mt-6 text-lg font-semibold text-indigo-300">
                         “Building scalable architectures, reliable systems, and
-                        intelligent AI-powered applications.”
+                        cloud-native solutions.”
                     </p>
                 </div>
             </main>

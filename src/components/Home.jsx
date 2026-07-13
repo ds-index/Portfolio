@@ -2,8 +2,7 @@ import { Link } from "react-router-dom";
 import Typeing from "./Typeing";
 import armanDSImgage from "../assets/s2.png";
 import softwareArchitecture from "../assets/code-svgrepo-com.svg";
-// import softwareEngineer from "../assets/software-svgrepo-com.svg";
-import aiLogo from "../assets/artificial-intelligence-ai-icon.webp";
+import softwareEngineer from "../assets/software-svgrepo-com.svg";
 
 export default function Home() {
     return (
@@ -27,8 +26,9 @@ export default function Home() {
                         high-performance systems with .NET, Clean Architecture,
                         and modern software engineering practices. Passionate
                         about system design and distributed systems. Currently
-                        learning AI, Machine Learning, Deep Learning, LLMs, RAG,
-                        and AI Agents.
+                        learning Golang, DevOps, and Cloud Computing, with a
+                        strong focus on building scalable, reliable, and
+                        efficient systems.
                     </p>
 
                     <div className="mt-8 flex flex-wrap justify-center gap-3 md:justify-start">
@@ -59,7 +59,7 @@ export default function Home() {
                         Backend Engineer
                     </div>
                     <div className="absolute -bottom-2 right-3 rounded-full border border-violet-300/30 bg-violet-500/10 px-3 py-2 text-sm font-semibold text-violet-100 shadow-lg backdrop-blur">
-                        AI
+                        DevOps & Cloud
                     </div>
                 </div>
             </div>
@@ -68,16 +68,16 @@ export default function Home() {
                 <div className="flex flex-1 items-center gap-3 rounded-2xl border border-indigo-400/20 bg-gradient-to-r from-indigo-500/10 to-violet-500/10 p-4 shadow-lg shadow-indigo-950/20 backdrop-blur">
                     <img
                         className="h-11 w-11"
-                        src={aiLogo}
-                        alt="Software Engineer"
+                        src={softwareEngineer}
+                        alt="DevOps & Cloud"
                     />
                     <div>
                         <div className="text-lg font-bold text-indigo-100">
-                            AI Explorer
+                            DevOps & Cloud Enthusiast
                         </div>
                         <p className="text-sm text-slate-300">
-                            Scalable architecture, system reliability, and
-                            AI-driven solutions.
+                            Scalable architecture, cloud-native technologies,
+                            system reliability, and infrastructure automation.
                         </p>
                     </div>
                 </div>
